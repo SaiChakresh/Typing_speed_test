@@ -10,9 +10,9 @@ window.configure(bg="skyblue")
 
 # Sample sentences
 sentences = [
-    "The quick red fox jumps over the lazy dog.",
-    "Pack my box with seven dozen liquor jugs.",
-    "Six big devils from Greece quickly forgot how to fox-trot."
+    "The five boxing wizards jump quickly.", "Jackdaws love my big sphinx of quartz.",
+    "How vexingly quick daft zebras jump!", "Crazy Fredrick bought many very exquisite opal jewels.",
+    "Jinxed wizards pluck ivy from the big quilt.", "Quick zephyrs blow, vexing daft Jim."
 ]
 
 
@@ -42,7 +42,7 @@ def calculate():
     NWPM = (correct_count / 5) / time_in_min
     accuracy = (NWPM * 100) / GWPM
 
-    result = f"Total characters: {total_chars}\nCorrect characters: {correct_count}\nIncorrect characters: {total_chars - correct_count}\nTime taken: {round(time_taken, 2)} sec\nAccuracy: {round(accuracy, 2)}%\nTyping speed: {round(NWPM, 2)} WPM"
+    result = f"Total characters: {total_chars}\nCorrect : {correct_count}\nIncorrect : {total_chars - correct_count}\nTime taken: {round(time_taken, 2)} sec\nAccuracy: {round(accuracy, 2)}%\nTyping speed: {round(NWPM, 2)} WPM"
 
     text3.insert("1.0", result)
 
